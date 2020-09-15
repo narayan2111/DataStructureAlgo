@@ -1,15 +1,14 @@
 def arraymirror(arr):
-	n=len(arr)
-	for i in range(0,n):
+	arr.sort()
+	for i in range(1,n-1):
 		if (arr[arr[i]]!=i):
 			return False
 
 	return True
-arr=[]
-n=int(input("Enter size:"))
-for i in range(n):
-	item=int(input())
-	arr.append(item)
+
+arr = []
+n = int(input())
+arr = [int(i) for i in input().split()]
 if(arraymirror(arr)):
 	print("Yes")
 else :
