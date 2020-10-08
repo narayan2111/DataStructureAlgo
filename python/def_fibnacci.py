@@ -16,6 +16,7 @@ def fib(n):
             b,a=a+b,b
     return(b)
 #we want to calculate fib(n)%m for big numbers
-n,m=map(int,input().split())
-remainder=n%pisano_length(m)
-print(fib(remainder)%m)
+#n,m=map(int,input().split())
+n=int(input())
+remainder=n//10
+print(fib(remainder)//10)
